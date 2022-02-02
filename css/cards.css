@@ -1,0 +1,77 @@
+.container{
+  position: relative;
+  margin-top: -5rem;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+} 
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: .5rem;
+  margin: auto;
+  height: 30rem;
+  width: 22rem;
+}
+
+
+/* header do card */
+.card-header{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.4rem 1rem;
+  
+  /* border: 1px solid grey; */
+}
+
+/* divisor */
+.card hr{
+  margin: 1rem auto;
+}
+/* conteudo do card */
+.card-content{
+  padding: 0 1.5rem 2rem;
+}
+
+.price p:first-child {
+  font-weight: 600;
+}
+.price p span:first-child{
+  font-size: 1.8rem;
+}
+
+.price p span:last-child {
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.price p:last-child {
+  color: var(--gray);
+}
+
+/* text benefits */
+
+.benefits{
+  color: var(--gray);
+  font-weight: 500;
+}
+
+
+/* button-assinar */
+
+.btn-assinar{
+  text-transform: uppercase;
+  width: 100%;
+
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+
+  background-color: #fff;
+
+  font-size: 1.4rem;
+}
