@@ -1,41 +1,61 @@
 .container{
   position: relative;
-  margin-top: -5rem;
+  margin: -12rem auto auto;
+  max-width: 82rem;
 }
 
-.cards{
+.card-container{
   display: flex;
   flex-direction: row;
   height: 100%;
+  flex-wrap: wrap;
 } 
 
-.card{
+.card-item{
+  height: 32rem;
+  width: 25rem;
+  margin: auto auto 1rem auto;
+  
   display: flex;
   flex-direction: column;
+
   background-color: #fff;
   border-radius: .5rem;
-  margin: auto;
-  height: 30rem;
-  width: 22rem;
+  box-shadow: 0px 0px 22px -3px rgba(146, 146, 146, 0.1); 
 }
-
+.card-item.basic {
+  position: relative;
+}
 
 /* header do card */
 .card-header{
   font-size: 1.2rem;
   font-weight: 600;
   padding: 1.4rem 1rem;
-  
-  /* border: 1px solid grey; */
 }
 
-/* divisor */
-.card hr{
-  margin: 1rem auto;
+.card-header p {
+  padding-left: 0.5rem;
 }
+
+.price p:first-child{
+  margin: .8rem auto;
+}
+.price p:last-child{
+  font-size: .9rem;
+}
+
+
+/* divisor */
+.card-item hr{
+  margin: 1.3rem auto;
+}
+
 /* conteudo do card */
 .card-content{
+  position: relative;
   padding: 0 1.5rem 2rem;
+  height: 100%;
 }
 
 .price p:first-child {
@@ -54,24 +74,86 @@
   color: var(--gray);
 }
 
-/* text benefits */
+/*benefits */
 
-.benefits{
+.benefits p{
   color: var(--gray);
-  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
 }
 
+.basic .benefits p{
+  font-size: 16px;
+  margin-bottom: 1.0625rem;
+}
 
-/* button-assinar */
+.icon-check{
+  background-image: url('../assets/check.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left center;
+}
 
-.btn-assinar{
-  text-transform: uppercase;
+/* basico */
+.title-basic{
+  border-radius: 8px 8px 0 0;
+  background-color: #FFCC29;
+  color: #1D539E;
+}
+
+/* card-footer */
+.card-footer {
   width: 100%;
+  height: 49px;
 
-  border-radius: 5px;
-  border: 1px solid var(--blue);
+  display: grid;
+  align-items: center;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  margin: auto;
+}
 
-  background-color: #fff;
+a.btn-assinar{  
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #1D539E;
 
-  font-size: 1.4rem;
+}
+
+.card-footer{
+  width: 100%;
+  max-width: 15rem;
+  border: 1px solid #1D539E;
+  border-radius: 10px;
+}
+
+.basic .card-footer{
+  background-color: #1D539E;
+}
+
+.basic a.btn-assinar{
+  color: #fff;
+}
+
+/* button basic popular */
+button.popular-button {
+  position: absolute;
+  right: 1.4rem;
+  height: 2rem;
+  padding: 8px 24px;
+  background: #1D539E;
+  border-radius: 40px;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
 }

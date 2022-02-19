@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-
 :root {
   --yellow: #ffcc29;
   --blue: #1d539e;
@@ -15,9 +12,9 @@
 
 
 /* body */
-
 body{
-  font-family: 'Open Sans';
+  font-family:'Open Sans', serif;  
+  /* font-family: 'Open Sans', sans-serif; */
   background-color: var(--page-background);
 }
 
@@ -26,8 +23,9 @@ header{
   height: 50vh;
   color: #fff;
   text-align: center;
-  
   background-color: var(--blue);
+
+  padding-top: 3.5rem;
 }
 
 h1{
